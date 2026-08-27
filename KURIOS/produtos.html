@@ -1,370 +1,717 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
     <title>Produtos | Coprobel</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
-<header>
 
-    <a href="coprobel.html">
-        <img src="imagens/logoC.jpg" class="logo" alt="Coprobel">
-    </a>
+    <!-- MENU -->
 
-    <nav>
-        <a href="coprobel.html">Home</a>
-        <a href="produtos.html">Produtos</a>
-        <a href="sobre.html">Sustentabilidade</a>
-        <a href="contato.html">Contato</a>
-    </nav>
+    <header class="header">
 
-</header>
+        <a href="coprobel.html" class="logo-area">
+
+            <img src="imagens/logoC.jpg"
+                class="logo"
+                alt="Coprobel">
+
+        </a>
 
 
-<section class="titulo">
+        <nav class="menu">
 
-    <small>COPROBEL</small>
+            <a href="coprobel.html">
+                Home
+            </a>
 
-    <h1>Nossos Produtos</h1>
+            <a href="produtos.html"
+                class="ativo">
+                Produtos
+            </a>
 
-    <p>
-        Conheça nossos produtos de beleza e cuidados pessoais.
-    </p>
+            <a href="sobre.html">
+                Sustentabilidade
+            </a>
 
-</section>
+            <a href="contato.html">
+                Contato
+            </a>
 
-
-<div class="filtros">
-
-    <button onclick="filtrar('todos')">Todos</button>
-
-    <button onclick="filtrar('cabelos')">Cabelos</button>
-
-    <button onclick="filtrar('eletricos')">Elétricos</button>
-
-    <button onclick="filtrar('maquiagem')">Maquiagem</button>
-
-</div>
+        </nav>
 
 
-<section class="produtos">
+        <button class="menu-mobile"
+            id="menuMobile">
+            ☰
+        </button>
 
+    </header>
 
-    <!-- ============================= -->
-    <!-- CABELOS - PRODUTO 1 -->
-    <!-- ============================= -->
+    <!-- CABEÇALHO -->
 
-    <div class="produto cabelos">
+    <section class="pagina-topo">
 
-        <div class="produto-img">
-            <img src="imagens/CABELO1.png" alt="Shampoo">
+        <div>
+
+            <span class="tag">
+                COPROBEL • CATÁLOGO
+            </span>
+
+            <h1>
+                Produtos que
+                fazem parte do cuidado.
+            </h1>
+
+            <p>
+                Explore nossa seleção de produtos para
+                cabelos, beleza e cuidados pessoais.
+            </p>
+
         </div>
 
-        <small>Cabelos</small>
-
-        <h2>Shampoo</h2>
-
-        <p>
-            Cuidados para deixar os cabelos limpos e bem tratados.
-        </p>
-
-    </div>
+    </section>
 
 
-    <!-- CABELOS - PRODUTO 2 -->
 
-    <div class="produto cabelos">
+    <!-- FILTROS -->
 
-        <div class="produto-img">
-            <img src="imagens/CABELO3.jpg" alt="Creme para cabelo">
+    <section class="area-produtos">
+
+        <div class="filtros">
+
+            <button
+                class="filtro ativo"
+                onclick="filtrar('todos', this)">
+                Todos
+            </button>
+
+            <button
+                class="filtro"
+                onclick="filtrar('cabelos', this)">
+                Cabelos
+            </button>
+
+            <button
+                class="filtro"
+                onclick="filtrar('eletricos', this)">
+                Elétricos
+            </button>
+
+            <button
+                class="filtro"
+                onclick="filtrar('maquiagem', this)">
+                Maquiagem
+            </button>
+
         </div>
 
-        <small>Cabelos</small>
-
-        <h2>Creme</h2>
-
-        <p>
-            Creme para hidratação e cuidado dos cabelos.
-        </p>
-
-    </div>
 
 
-    <!-- CABELOS - PRODUTO 3 -->
+        <!-- PRODUTOS -->
 
-    <div class="produto cabelos">
+        <div class="produtos">
 
-        <div class="produto-img">
-            <img src="imagens/CABELO2.jPEG" alt="Máscara capilar">
+
+            <!-- CABELOS -->
+
+            <article class="produto cabelos">
+
+                <div class="produto-img">
+
+                    <span class="produto-numero">
+                        01
+                    </span>
+
+                    <img src="imagens/CABELO1.jpeg"
+                        alt="Shampoo">
+
+                </div>
+
+                <div class="produto-info">
+
+                    <small>CABELOS</small>
+
+                    <h2>
+                        Shampoo
+                    </h2>
+
+                    <p>
+                        Cuidados para deixar os cabelos
+                        limpos e bem tratados.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="produto cabelos">
+
+                <div class="produto-img">
+
+                    <span class="produto-numero">
+                        02
+                    </span>
+
+                    <img src="imagens/CABELO3.jpg"
+                        alt="Creme">
+
+                </div>
+
+                <div class="produto-info">
+
+                    <small>CABELOS</small>
+
+                    <h2>
+                        Creme
+                    </h2>
+
+                    <p>
+                        Creme para hidratação e cuidado
+                        dos cabelos.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="produto cabelos">
+
+                <div class="produto-img">
+
+                    <span class="produto-numero">
+                        03
+                    </span>
+
+                    <img src="imagens/CABELO2.jPEG"
+                        alt="Máscara Capilar">
+
+                </div>
+
+                <div class="produto-info">
+
+                    <small>CABELOS</small>
+
+                    <h2>
+                        Máscara Capilar
+                    </h2>
+
+                    <p>
+                        Tratamento para ajudar na
+                        hidratação dos fios.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="produto cabelos">
+
+                <div class="produto-img">
+
+                    <span class="produto-numero">
+                        04
+                    </span>
+
+                    <img src="imagens/CABELO4.jpeg"
+                        alt="Condicionador">
+
+                </div>
+
+                <div class="produto-info">
+
+                    <small>CABELOS</small>
+
+                    <h2>
+                        Condicionador
+                    </h2>
+
+                    <p>
+                        Cuidado diário para deixar
+                        os cabelos mais macios.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="produto cabelos">
+
+                <div class="produto-img">
+
+                    <span class="produto-numero">
+                        05
+                    </span>
+
+                    <img src="imagens/CABELO5.jpeg"
+                        alt="Óleo Capilar">
+
+                </div>
+
+                <div class="produto-info">
+
+                    <small>CABELOS</small>
+
+                    <h2>
+                        Óleo Capilar
+                    </h2>
+
+                    <p>
+                        Ideal para cuidar dos fios
+                        e finalizar o cabelo.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ELÉTRICOS -->
+
+            <article class="produto eletricos">
+
+                <div class="produto-img">
+
+                    <span class="produto-numero">
+                        06
+                    </span>
+
+                    <img src="imagens/ELETRICO1.webp"
+                        alt="Secador">
+
+                </div>
+
+                <div class="produto-info">
+
+                    <small>ELÉTRICOS</small>
+
+                    <h2>
+                        Secador
+                    </h2>
+
+                    <p>
+                        Praticidade para secar
+                        e modelar os cabelos.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="produto eletricos">
+
+                <div class="produto-img">
+
+                    <span class="produto-numero">
+                        07
+                    </span>
+
+                    <img src="imagens/ELETRICO2.webp"
+                        alt="Chapinha">
+
+                </div>
+
+                <div class="produto-info">
+
+                    <small>ELÉTRICOS</small>
+
+                    <h2>
+                        Chapinha
+                    </h2>
+
+                    <p>
+                        Para ajudar a deixar os cabelos
+                        lisos e alinhados.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="produto eletricos">
+
+                <div class="produto-img">
+
+                    <span class="produto-numero">
+                        08
+                    </span>
+
+                    <img src="imagens/ELETRICO5.webp"
+                        alt="Modelador">
+
+                </div>
+
+                <div class="produto-info">
+
+                    <small>ELÉTRICOS</small>
+
+                    <h2>
+                        Modelador
+                    </h2>
+
+                    <p>
+                        Ideal para criar diferentes
+                        estilos e penteados.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="produto eletricos">
+
+                <div class="produto-img">
+
+                    <span class="produto-numero">
+                        09
+                    </span>
+
+                    <img src="imagens/ELETRICO4.webp"
+                        alt="Escova Elétrica">
+
+                </div>
+
+                <div class="produto-info">
+
+                    <small>ELÉTRICOS</small>
+
+                    <h2>
+                        Escova Elétrica
+                    </h2>
+
+                    <p>
+                        Praticidade para pentear
+                        e modelar os cabelos.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="produto eletricos">
+
+                <div class="produto-img">
+
+                    <span class="produto-numero">
+                        10
+                    </span>
+
+                    <img src="imagens/ELETRICO3.webp"
+                        alt="Máquina de Cabelo">
+
+                </div>
+
+                <div class="produto-info">
+
+                    <small>ELÉTRICOS</small>
+
+                    <h2>
+                        Máquina de Cabelo
+                    </h2>
+
+                    <p>
+                        Equipamento para cortes
+                        e cuidados com os cabelos.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- MAQUIAGEM -->
+
+            <article class="produto maquiagem">
+
+                <div class="produto-img">
+
+                    <span class="produto-numero">
+                        11
+                    </span>
+
+                    <img src="imagens/MAQUIAGEM1.webp"
+                        alt="Base">
+
+                </div>
+
+                <div class="produto-info">
+
+                    <small>MAQUIAGEM</small>
+
+                    <h2>
+                        Base
+                    </h2>
+
+                    <p>
+                        Produto para preparar
+                        e uniformizar a pele.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="produto maquiagem">
+
+                <div class="produto-img">
+
+                    <span class="produto-numero">
+                        12
+                    </span>
+
+                    <img src="imagens/MAQUIAGEM2.webp"
+                        alt="Batom">
+
+                </div>
+
+                <div class="produto-info">
+
+                    <small>MAQUIAGEM</small>
+
+                    <h2>
+                        Batom
+                    </h2>
+
+                    <p>
+                        Diferentes cores para completar
+                        sua maquiagem.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="produto maquiagem">
+
+                <div class="produto-img">
+
+                    <span class="produto-numero">
+                        13
+                    </span>
+
+                    <img src="imagens/MAQUIAGEM4.JPEG"
+                        alt="Blush">
+
+                </div>
+
+                <div class="produto-info">
+
+                    <small>MAQUIAGEM</small>
+
+                    <h2>
+                        Blush
+                    </h2>
+
+                    <p>
+                        Para dar um toque de cor
+                        à maquiagem.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="produto maquiagem">
+
+                <div class="produto-img">
+
+                    <span class="produto-numero">
+                        14
+                    </span>
+
+                    <img src="imagens/MAQUIAGEM5.webp"
+                        alt="Máscara de Cílios">
+
+                </div>
+
+                <div class="produto-info">
+
+                    <small>MAQUIAGEM</small>
+
+                    <h2>
+                        Máscara de Cílios
+                    </h2>
+
+                    <p>
+                        Para destacar e valorizar
+                        os cílios.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="produto maquiagem">
+
+                <div class="produto-img">
+
+                    <span class="produto-numero">
+                        15
+                    </span>
+
+                    <img src="imagens/MAQUIAGEM3.webp"
+                        alt="Corretivo">
+
+                </div>
+
+                <div class="produto-info">
+
+                    <small>MAQUIAGEM</small>
+
+                    <h2>
+                        Corretivo
+                    </h2>
+
+                    <p>
+                        Para ajudar a uniformizar
+                        a aparência da pele.
+                    </p>
+
+                </div>
+
+            </article>
+
+
         </div>
 
-        <small>Cabelos</small>
-
-        <h2>Máscara Capilar</h2>
-
-        <p>
-            Tratamento para ajudar na hidratação e recuperação dos fios.
-        </p>
-
-    </div>
+    </section>
 
 
-    <!-- CABELOS - PRODUTO 4 -->
 
-    <div class="produto cabelos">
+    <!-- FRASE -->
 
-        <div class="produto-img">
-            <img src="imagens/CABELO4.png" alt="Condicionador">
+    <section class="manifesto pequeno">
+
+        <div class="manifesto-conteudo">
+
+            <span>COPROBEL</span>
+
+            <h2>
+                Seu cuidado.
+                Seu estilo.
+                Seu momento.
+            </h2>
+
+            <a href="contato.html">
+                FALE COM A GENTE
+                <strong>→</strong>
+            </a>
+
         </div>
 
-        <small>Cabelos</small>
-
-        <h2>Condicionador</h2>
-
-        <p>
-            Cuidado diário para deixar os cabelos mais macios.
-        </p>
-
-    </div>
+    </section>
 
 
-    <!-- CABELOS - PRODUTO 5 -->
 
-    <div class="produto cabelos">
+    <!-- FOOTER -->
 
-        <div class="produto-img">
-            <img src="imagens/Cabelo5.png" alt="Óleo para cabelo">
+    <footer>
+
+        <div class="footer-principal">
+
+            <div class="footer-marca">
+
+                <img src="imagens/logoC.jpg"
+                    alt="Coprobel">
+
+                <p>
+                    Cosméticos, beleza e cuidado
+                    para todos os momentos.
+                </p>
+
+            </div>
+
+
+            <div class="footer-coluna">
+
+                <span>NAVEGAÇÃO</span>
+
+                <a href="coprobel.html">
+                    Home
+                </a>
+
+                <a href="produtos.html">
+                    Produtos
+                </a>
+
+                <a href="sobre.html">
+                    Sustentabilidade
+                </a>
+
+                <a href="contato.html">
+                    Contato
+                </a>
+
+            </div>
+
+
+            <div class="footer-coluna">
+
+                <span>COPROBEL</span>
+
+                <p>
+                    Beleza que começa
+                    no cuidado.
+                </p>
+
+            </div>
+
         </div>
 
-        <small>Cabelos</small>
 
-        <h2>Óleo Capilar</h2>
+        <div class="footer-final">
 
-        <p>
-            Ideal para cuidar dos fios e finalizar o cabelo.
-        </p>
+            <span>© 2026 Coprobel</span>
 
-    </div>
+            <span>Cosméticos &amp; Beleza</span>
 
-
-
-    <!-- ============================= -->
-    <!-- ELÉTRICOS - PRODUTO 1 -->
-    <!-- ============================= -->
-
-    <div class="produto eletricos">
-
-        <div class="produto-img">
-            <img src="imagens/ELETRICO1.webp" alt="Secador">
         </div>
 
-        <small>Elétricos</small>
+    </footer>
 
-        <h2>Secador</h2>
 
-        <p>
-            Praticidade para secar e modelar os cabelos.
-        </p>
-
-    </div>
-
-
-    <!-- ELÉTRICOS - PRODUTO 2 -->
-
-    <div class="produto eletricos">
-
-        <div class="produto-img">
-            <img src="imagens/ELETRICO2.webp" alt="Chapinha">
-        </div>
-
-        <small>Elétricos</small>
-
-        <h2>Chapinha</h2>
-
-        <p>
-            Para ajudar a deixar os cabelos lisos e alinhados.
-        </p>
-
-    </div>
-
-
-    <!-- ELÉTRICOS - PRODUTO 3 -->
-
-    <div class="produto eletricos">
-
-        <div class="produto-img">
-            <img src="imagens/ELETRICO5.webp" alt="Modelador">
-        </div>
-
-        <small>Elétricos</small>
-
-        <h2>Modelador</h2>
-
-        <p>
-            Ideal para criar diferentes estilos e penteados.
-        </p>
-
-    </div>
-
-
-    <!-- ELÉTRICOS - PRODUTO 4 -->
-
-    <div class="produto eletricos">
-
-        <div class="produto-img">
-            <img src="imagens/ELETRICO4.webp" alt="Escova elétrica">
-        </div>
-
-        <small>Elétricos</small>
-
-        <h2>Escova Elétrica</h2>
-
-        <p>
-            Praticidade para pentear e modelar os cabelos.
-        </p>
-
-    </div>
-
-
-    <!-- ELÉTRICOS - PRODUTO 5 -->
-
-    <div class="produto eletricos">
-
-        <div class="produto-img">
-            <img src="imagens/ELETRICO3.webp" alt="Máquina de cabelo">
-        </div>
-
-        <small>Elétricos</small>
-
-        <h2>Máquina de Cabelo</h2>
-
-        <p>
-            Equipamento para cortes e cuidados com os cabelos.
-        </p>
-
-    </div>
-
-
-
-    <!-- ============================= -->
-    <!-- MAQUIAGEM - PRODUTO 1 -->
-    <!-- ============================= -->
-
-    <div class="produto maquiagem">
-
-        <div class="produto-img">
-            <img src="imagens/MAQUIAGEM1.webp" alt="Base">
-        </div>
-
-        <small>Maquiagem</small>
-
-        <h2>Base</h2>
-
-        <p>
-            Produto para preparar e uniformizar a pele.
-        </p>
-
-    </div>
-
-
-    <!-- MAQUIAGEM - PRODUTO 2 -->
-
-    <div class="produto maquiagem">
-
-        <div class="produto-img">
-            <img src="imagens/MAQUIAGEM2.webp" alt="Batom">
-        </div>
-
-        <small>Maquiagem</small>
-
-        <h2>Batom</h2>
-
-        <p>
-            Diferentes cores para completar sua maquiagem.
-        </p>
-
-    </div>
-
-
-    <!-- MAQUIAGEM - PRODUTO 3 -->
-
-    <div class="produto maquiagem">
-
-        <div class="produto-img">
-            <img src="imagens/MAQUIAGEM4.JPEG" alt="Blush">
-        </div>
-
-        <small>Maquiagem</small>
-
-        <h2>Blush</h2>
-
-        <p>
-            Para dar um toque de cor à maquiagem.
-        </p>
-
-    </div>
-
-
-    <!-- MAQUIAGEM - PRODUTO 4 -->
-
-    <div class="produto maquiagem">
-
-        <div class="produto-img">
-            <img src="imagens/MAQUIAGEM5.webp" alt="Máscara de cílios">
-        </div>
-
-        <small>Maquiagem</small>
-
-        <h2>Máscara de Cílios</h2>
-
-        <p>
-            Para destacar e valorizar os cílios.
-        </p>
-
-    </div>
-
-
-    <!-- MAQUIAGEM - PRODUTO 5 -->
-
-    <div class="produto maquiagem">
-
-        <div class="produto-img">
-            <img src="imagens/MAQUIAGEM3.webp" alt="Corretivo">
-        </div>
-
-        <small>Maquiagem</small>
-
-        <h2>Corretivo</h2>
-
-        <p>
-            Para ajudar a uniformizar a aparência da pele.
-        </p>
-
-    </div>
-
-</section>
-
-
-<footer>
-
-    <strong>Coprobel</strong>
-
-    <span>Cosméticos e Beleza</span>
-
-    <span>© 2026 Coprobel</span>
-
-</footer>
-
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
 </html>
+

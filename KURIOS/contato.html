@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -8,87 +9,300 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
 
-    <title>Contato | Kurios</title>
+    <title>Contato | Coprobel</title>
 
     <link rel="stylesheet" href="style.css">
 
 </head>
 
+
 <body>
 
-<header>
 
-    <a href="coprobel.html">
-        <img src="imagens/logoC.jpg" class="logo" alt="Kurios">
-    </a>
+    <header class="header">
 
-    <nav>
-        <a href="coprobel.html">Home</a>
-        <a href="produtos.html">Produtos</a>
-        <a href="sobre.html">Sustentabilidade</a>
-        <a href="contato.html">Contato</a>
-    </nav>
+        <a href="coprobel.html" class="logo-area">
 
-</header>
+            <img src="imagens/logoC.jpg"
+                class="logo"
+                alt="Coprobel">
+
+        </a>
 
 
-<section class="contato">
+        <nav class="menu">
 
-    <div>
+            <a href="coprobel.html">
+                Home
+            </a>
 
-        <small>FALE COM A KURIOS</small>
+            <a href="produtos.html">
+                Produtos
+            </a>
 
-        <h2>Entre em contato.</h2>
+            <a href="sobre.html">
+                Sustentabilidade
+            </a>
 
-        <p>
-            Quer saber mais sobre nossas peças,
-            coleções ou produção?
-        </p>
+            <a href="contato.html"
+                class="ativo">
+                Contato
+            </a>
 
-        <p>
-            Envie uma mensagem e fale com a gente.
-        </p>
-
-    </div>
+        </nav>
 
 
-    <form>
-
-        <input
-            type="text"
-            placeholder="Seu nome"
-        >
-
-        <input
-            type="email"
-            placeholder="Seu e-mail"
-        >
-
-        <textarea
-            placeholder="Sua mensagem">
-        </textarea>
-
-        <button type="submit">
-            ENVIAR MENSAGEM
+        <button class="menu-mobile"
+            id="menuMobile">
+            ☰
         </button>
 
-    </form>
-
-</section>
+    </header>
 
 
-<footer>
 
-    <strong>KURIOS</strong>
+    <main>
 
-    <span>Malharia e confecção</span>
+        <section class="contato-topo">
 
-    <span>© 2026 Kurios</span>
+            <div>
 
-</footer>
+                <span class="tag">
+                    COPROBEL • CONTATO
+                </span>
+
+                <h1>
+                    Vamos conversar
+                    sobre beleza.
+                </h1>
+
+                <p>
+                    Ficou com alguma dúvida?
+                    Quer saber mais sobre nossos produtos?
+                    Envie uma mensagem.
+                </p>
+
+            </div>
+
+        </section>
 
 
-<script src="script.js"></script>
+
+        <section class="contato-area">
+
+
+            <div class="contato-info">
+
+                <span class="numero">
+                    01
+                </span>
+
+                <h2>
+                    Fale com a Coprobel.
+                </h2>
+
+                <p>
+                    Estamos aqui para ajudar.
+                    Preencha o formulário e envie
+                    sua mensagem para nossa equipe.
+                </p>
+
+
+                <div class="contato-detalhe">
+
+                    <span>
+                        ATENDIMENTO
+                    </span>
+
+                    <strong>
+                        Entre em contato
+                        conosco.
+                    </strong>
+
+                </div>
+
+
+                <div class="contato-detalhe">
+
+                    <span>
+                        CATEGORIAS
+                    </span>
+
+                    <strong>
+                        Cabelos • Elétricos
+                        • Maquiagem
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <form class="formulario"
+                id="formContato">
+
+                <label>
+                    Seu nome
+                </label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Digite seu nome"
+                    required>
+
+
+                <label>
+                    Seu e-mail
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Digite seu e-mail"
+                    required>
+
+
+                <label>
+                    Assunto
+                </label>
+
+                <input
+                    type="text"
+                    id="assunto"
+                    placeholder="Sobre o que você quer falar?"
+                    required>
+
+
+                <label>
+                    Sua mensagem
+                </label>
+
+                <textarea
+                    id="mensagem"
+                    placeholder="Escreva sua mensagem..."
+                    required></textarea>
+
+
+                <button type="submit">
+
+                    ENVIAR MENSAGEM
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+
+                <small id="mensagem-form">
+                </small>
+
+            </form>
+
+        </section>
+
+
+
+        <section class="manifesto pequeno">
+
+            <div class="manifesto-conteudo">
+
+                <span>
+                    COPROBEL
+                </span>
+
+                <h2>
+                    Seu cuidado começa
+                    com uma escolha.
+                </h2>
+
+                <a href="produtos.html">
+                    VER PRODUTOS
+                    <strong>→</strong>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+
+        <div class="footer-principal">
+
+            <div class="footer-marca">
+
+                <img src="imagens/logoC.jpg"
+                    alt="Coprobel">
+
+                <p>
+                    Cosméticos, beleza e cuidado
+                    para todos os momentos.
+                </p>
+
+            </div>
+
+
+            <div class="footer-coluna">
+
+                <span>NAVEGAÇÃO</span>
+
+                <a href="coprobel.html">
+                    Home
+                </a>
+
+                <a href="produtos.html">
+                    Produtos
+                </a>
+
+                <a href="sobre.html">
+                    Sustentabilidade
+                </a>
+
+                <a href="contato.html">
+                    Contato
+                </a>
+
+            </div>
+
+
+            <div class="footer-coluna">
+
+                <span>COPROBEL</span>
+
+                <p>
+                    Beleza que começa
+                    no cuidado.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-final">
+
+            <span>
+                © 2026 Coprobel
+            </span>
+
+            <span>
+                Cosméticos &amp; Beleza
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
+
