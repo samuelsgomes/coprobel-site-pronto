@@ -122,7 +122,7 @@ textarea {
     backdrop-filter: blur(15px);
 
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-
+    
     transition: 0.3s;
 }
 
